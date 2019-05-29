@@ -1,18 +1,14 @@
 {{ partial "head" . }}
 body
-  #landing
-    div id="js-canvas-wrapper" class="canvas-wrapper"
-    video autoplay="" loop="" muted=""
-      source src="/video/light-rays.mp4" type="video/mp4"
+  header
     section
-      .helmet
-        img src="/img/helmet.svg"
-      .title
-        .wrapper 
-          img src="/img/title.svg?2"
-          p A short description of the concept
-          a href="" Watch the video
-          a href="" Listen to the podcast episode
-          a href="" Read the report
-  section
-    {{.Content}}
+      h1 Paul M Fox. Software ontologist and hero.
+      h2 I make software applications and I'm the co-founder of <a href="https://endian.io" target="_blank">Endian</a>.
+      img src="/img/paul.svg"
+      ul#ctas
+        li 
+          a href="https://github.com/yourheropaul" target="_blank" GitHub
+        li 
+          a href="https://www.linkedin.com/in/yourheropaul" target="_blank" LinkedIn
+        li 
+          a href="https://endian.io" target="_blank" Endian
