@@ -1,0 +1,5 @@
+baseURL       = "https://yourheropaul.com"
+languageCode  = "en-gb"
+title         = "Paul M Fox"
+theme         = "yhp"
+enableGitInfo = true

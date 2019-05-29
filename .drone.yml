@@ -1,0 +1,25 @@
+pipeline:
+
+    build-production:
+      image: endian/hugo:1.0.3
+      environment:
+        - HUGO_ENV="production"
+        - HUGO_BASEURL="https://yourheropaul.com"
+      commands:
+        - make build
+      when:
+        branch: [master]
+        event: [push, tag]
+
+    deploy-production:
+      image: plugins/s3
+      acl: public-read
+      region: "eu-west-2"
+      bucket: "yourheropaul.com"
+      source: public/**/*
+      strip_prefix: public/
+      target: /
+      encryption: AES256
+      when:
+        branch: [master]
+        event: [push, tag]

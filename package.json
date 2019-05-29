@@ -1,0 +1,13 @@
+{
+  "name": "how-we-let-go",
+  "version": "1.0.0",
+  "description": "How We Let Go",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "foundation-sites": "^6.5.3"
+  },
+  "repository": "https://github.com/how-we-let-go/report-website",
+  "author": "Rebecca Fox"
+}
