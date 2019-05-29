@@ -4,7 +4,7 @@ pipeline:
       image: endian/hugo:1.0.3
       environment:
         - HUGO_ENV="production"
-        - HUGO_BASEURL="https://yourheropaul.com"
+        - HUGO_BASEURL="https://yhp.io"
       commands:
         - make build
       when:
@@ -15,7 +15,7 @@ pipeline:
       image: plugins/s3
       acl: public-read
       region: "eu-west-2"
-      bucket: "yourheropaul.com"
+      bucket: "yhp.io"
       source: public/**/*
       strip_prefix: public/
       target: /
